@@ -26,10 +26,10 @@ function handleSubmit(e) {
             addError(formList[i])     
         }else if(formList[i].id === "email" && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formList[i].value)){
             addError(formList[i])     
-            form.email.nextElementSibling.innerHTML = "Looks like this is not an Email"
+            form.email.nextElementSibling.innerHTML = "Looks like this is not an Email!"
         }else if(formList[i].id === "password" && !/\w{8}$/.test(formList[i].value)){
             addError(formList[i])     
-            form.password.nextElementSibling.innerHTML = "Looks like this is not an Password"
+            form.password.nextElementSibling.innerHTML = "Looks like this is not a Password!"
         }else{
             removeError(formList[i])
         }
