@@ -1,7 +1,7 @@
 const formList = document.querySelectorAll("#form")[0]
 
 form.addEventListener("submit", handleSubmit)
-// form.addEventListener("click", validate)
+form.addEventListener("click", validate)
 
 
 for (let index = 0; index < formList.length-1; index++) {
