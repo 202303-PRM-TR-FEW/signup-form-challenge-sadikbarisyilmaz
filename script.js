@@ -5,7 +5,7 @@ form.addEventListener("click", validate)
 
 
 for (let index = 0; index < formList.length-1; index++) {
-    formList[index].addEventListener("keydown", validate)
+    formList[index].addEventListener("keyup", validate)
 }
 
 function addError(elem) {
